@@ -18,9 +18,9 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - uses: actio
-      - uses: actio
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
         with:
           path: '.'
-      - uses: actio
-        id: deploym
+      - uses: actions/deploy-pages@v4
+        id: deployment
